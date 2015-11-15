@@ -13,10 +13,9 @@ class ExampleController extends Controller
     public function actionIndex()
     {
         $model = new Example();
-        $name = $model->getName();
 
         return $this->render('index', [
-            'name' => $name
+            'model' => $model,
         ]);
     }
 }
